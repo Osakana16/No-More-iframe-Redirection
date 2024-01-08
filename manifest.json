@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "No More Iframe Redirection",
+  "description": "This plugin disables iframe working.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "NoMoreIframeRedirection.html",
+    "default_icon": "NoMoreIframeRedirection.png"
+  },
+  "content_scripts": [
+    {
+      "js": [ "content.js" ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ]
+}
